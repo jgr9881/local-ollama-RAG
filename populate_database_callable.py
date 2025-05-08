@@ -16,7 +16,9 @@ def main(reset: bool = False):
         clear_database()
 
     else :
+        print("Loading documents...")
         documents = load_documents()
+        print("Splitting documents into chunks...")
         chunks = split_documents(documents)
         add_to_chroma(chunks)
 
