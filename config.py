@@ -1,0 +1,9 @@
+CHROMA_PATH = "chroma"
+DATA_PATH = "data"
+
+EMBEDDING_MODEL = "nomic-embed-text"
+OLLAMA_RESPONSE_MODEL = "mistral"
+
+CHUNK_SIZE = 700
+CHUNK_OVERLAP = 80
+NUMBER_OF_CANDIDATES = 9
