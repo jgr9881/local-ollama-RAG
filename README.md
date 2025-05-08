@@ -8,6 +8,12 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system for qu
 
 ![Image](https://github.com/user-attachments/assets/beb5afaa-8f26-49a6-8e6c-4087252f4226)
 
+## 🖼️ Demonstration
+
+Here’s a concise demonstration using three years of Spotify’s annual reports (over 600 pages of dense content). By employing only the basic nomic-embed-text embedding model alongside a simple open-source Mistral LLM (4b parameters) and without any parameter tuning, this RAG system consistently retrieves accurate, contextually grounded information from a very large document collection.
+
+![Image](https://github.com/user-attachments/assets/ee739cbc-96a0-45ea-9cee-694487614226)
+
 ## 🛠️ How It Works
 
 1. **Data Ingestion & Preprocessing**
@@ -132,7 +138,7 @@ pip install -r requirements.txt
 ├── ui.py                     # Streamlit application
 ├── test_rag.py               # Automated tests (pytest)
 ├── requirements.txt          # Python dependencies
-└── data/                     # Place your PDF files here (as an example, I have added the annual reports of Spotify - over 1200 pages of dense content - to show how useful RAG can be for corporate productivity)
+└── data/                     # Place your PDF files here (as an example, I have added the annual reports of Spotify - over 600 pages of dense content - to show how useful RAG can be for corporate productivity)
     └── *.pdf
 ```
 
@@ -144,5 +150,4 @@ Run this pytest suite in order to validate RAG outputs against expected response
 ```bash
 pytest
 ```
-
 ---
