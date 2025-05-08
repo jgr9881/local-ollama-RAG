@@ -12,7 +12,7 @@ import time
 def main(reset: bool = False):
 
     if reset:
-        print("✨ Clearing Database")
+        print("Clearing Database")
         clear_database()
 
     else :
